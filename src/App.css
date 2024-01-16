@@ -1,38 +1,58 @@
+/* APP JSX */
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* CALCULATOR CONTAINER */
+.calc-container {
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: solid black 2px;
+  background-color: rgb(68, 66, 66);
+  border-radius: 5%;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.calc-info {
+  display: flex;
+  border: solid white 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {
+  width: 20%;
+  margin: 10px auto;
+  height: 50px;
+  font-size: x-large;
+  font-weight: 700;
+  background-color: rgb(250, 246, 240);
+  border-radius: 10px;
+}
+
+.btns-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  
+}
+
+/* BUTTON JSX */
+.btn-face {
+text-align: center;
+width: 100px;
+height: 100px;
+background-color: darkslategray;
+color: whitesmoke;
+font-weight: 800;
+font-size: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: rgb(68, 61, 61) solid 1px;
+border-radius: 10%;
+}
+
+.btn-face:hover {
+  cursor: pointer;
 }
