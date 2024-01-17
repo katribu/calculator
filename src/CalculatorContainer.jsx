@@ -38,8 +38,12 @@ function CalculatorContainer(){
             
             <div className="calc-info-container">
                 <div className="input-field">{inputValue}</div>
-                <h1 className="clear">CE</h1>
-                <h1 className="answer-field">Ans.</h1>
+                <h1 className="clear" onClick={(()=> {
+                    setCalculation('')
+                    setInputValue('')})}
+                >
+                    CE
+                </h1>
             </div>
 
             <div className="btns-container">

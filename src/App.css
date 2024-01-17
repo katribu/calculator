@@ -32,7 +32,7 @@
   border-radius: 10px;
   flex: 2;
 }
-.calc-info-container h1 {
+.clear {
   flex: 1;
   background: rgb(4, 145, 102);
   border-radius: 10px;
@@ -62,6 +62,6 @@ border: rgb(68, 61, 61) solid 1px;
 border-radius: 10%;
 }
 
-.btn-face:hover {
+.btn-face:hover, .clear:hover  {
   cursor: pointer;
 }
