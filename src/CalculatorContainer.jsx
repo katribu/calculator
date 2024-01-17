@@ -19,8 +19,9 @@ function CalculatorContainer(){
 
     return (
         <div className="calc-container">
-            <div className="calc-info">
-                <h1 className="input">{inputValue}</h1>
+            {/* Calc-info-container not flexing correctly.... It is supposed to have space between each child. */}
+            <div className="calc-info-container">
+                <div className="input-field">{inputValue}</div>
                 <h1>CE</h1>
                 <h1>Ans.</h1>
             </div>

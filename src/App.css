@@ -16,12 +16,13 @@
   padding: 5px;
 }
 
-.calc-info {
+.calc-info-container {
   display: flex;
-  border: solid white 1px;
+  align-items: center;
+  padding: 0 5px;
 }
 
-.input {
+.input-field {
   width: 20%;
   margin: 10px auto;
   height: 50px;
@@ -29,6 +30,14 @@
   font-weight: 700;
   background-color: rgb(250, 246, 240);
   border-radius: 10px;
+  flex: 2;
+}
+.calc-info-container h1 {
+  flex: 1;
+  background: rgb(4, 145, 102);
+  border-radius: 10px;
+  height: 50px;
+  margin: 0 2px;
 }
 
 .btns-container {
